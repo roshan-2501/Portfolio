@@ -60,13 +60,3 @@ To build for production:
 npm run build
 ```
 
-## 📝 Customization
-
-- Update personal information in the respective page components
-- Modify colors and styling in `src/index.css`
-- Add your own projects in `src/pages/Projects.tsx`
-- Update skills in `src/pages/Skills.tsx`
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
