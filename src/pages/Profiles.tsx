@@ -136,12 +136,7 @@ const Profiles = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-16"
         >
-          <p className="text-muted-foreground mb-6">
-            Want to collaborate or discuss a project?
-          </p>
-          <AnimatedButton variant="glow" size="lg">
-            Let's Connect
-          </AnimatedButton>
+      
         </motion.div>
       </div>
     </div>

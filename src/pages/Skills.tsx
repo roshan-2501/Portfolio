@@ -16,6 +16,7 @@ const Skills = () => {
     { name: "Spring Boot", category: "Backend", icon: "🍃" },
     { name: "SQL", category: "Database", icon: "🗄️" },
     { name: "PostgreSQL", category: "Database", icon: "🐘" },
+    { name: "MongoDB", category: "Database", icon: "🍃" },
     { name: "Git", category: "DevOps", icon: "📝" },
     { name: "GitHub", category: "DevOps", icon: "🐙" },
     { name: "Jenkins", category: "DevOps", icon: "🤖" },

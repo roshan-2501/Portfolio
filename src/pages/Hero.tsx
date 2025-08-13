@@ -15,10 +15,10 @@ const Hero = () => {
   const handleDownloadCV = () => {
     try {
       // Create a CV download link
-      const cvUrl = '/cv.pdf';
+      const cvUrl = '/Roshan_Resume.pdf';
       const link = document.createElement('a');
       link.href = cvUrl;
-      link.download = 'Portfolio_CV.pdf';
+      link.download = 'Roshan_Resume.pdf';
       link.target = '_blank';
       
       // Add error handling

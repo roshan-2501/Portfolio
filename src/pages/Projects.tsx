@@ -5,40 +5,36 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
-      image: "🛒",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
-      gradient: "from-primary to-primary-glow",
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates",
-      image: "📋",
-      technologies: ["React", "Firebase", "Tailwind", "Framer Motion"],
-      liveUrl: "#",
-      githubUrl: "#",
-      gradient: "from-secondary to-secondary-glow",
-    },
-    {
-      title: "Portfolio Website",
-      description: "Personal portfolio with 3D animations and modern design",
-      image: "🎨",
-      technologies: ["React", "Three.js", "Framer Motion", "Tailwind"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Fitness Microservices Application",
+      description: "Secure fitness tracking app with Java microservices, dual databases, and React frontend. Features user management, workout logging, goal tracking, and AI-powered recommendations.",
+      image: "💪",
+      technologies: ["React.js", "JavaScript", "React Router", "CSS", "Java", "Spring Boot", "Spring Cloud", "PostgreSQL", "MongoDB", "Docker", "JWT", "Microservices"],
+      githubUrl: "https://github.com/roshan-2501/Fitness_Microservices_App.git",
       gradient: "from-accent to-accent-glow",
     },
     {
-      title: "Weather Dashboard",
-      description: "Beautiful weather app with location-based forecasts",
-      image: "🌤️",
-      technologies: ["React", "Weather API", "Chart.js", "CSS Grid"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "AI Chat Application",
+      description: "Full-stack chat app with React frontend and Java backend, integrated with Google Gemini AI for intelligent conversations and dynamic responses.",
+      image: "🤖",
+      technologies: ["React", "JavaScript", "Axios", "CSS", "Java", "Spring Boot", "Spring AI", "Vertex AI"],
+      githubUrl: "https://github.com/roshan-2501/AI-chatbot.git",
       gradient: "from-success to-success-glow",
+    },
+    {
+      title: "Retail Shopping Web Application",
+      description: "E-commerce platform with React frontend and Firebase backend. Features user authentication, product management, shopping cart, and secure transactions.",
+      image: "🛍️",
+      technologies: ["HTML", "CSS", "JavaScript", "React.js", "Firebase"],
+      githubUrl: "https://github.com/roshan-2501/Amazon-Clone-using-React.git",
+      gradient: "from-secondary to-secondary-glow",
+    },
+    {
+      title: "AI Summarizer Extension",
+      description: "Chrome extension powered by Google Gemini AI for summarizing web content. Features multiple summary types, clipboard integration, and secure API storage.",
+      image: "📝",
+      technologies: ["JavaScript", "HTML", "CSS", "Chrome Extensions API", "Google Gemini API"],
+      githubUrl: "https://github.com/roshan-2501/AI-Summarizer-Extension.git",
+      gradient: "from-primary to-primary-glow",
     },
   ];
 
@@ -72,8 +68,8 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A collection of projects that showcase my skills in modern web development,
-            from concept to deployment.
+            A collection of projects I've built to learn and demonstrate my skills in 
+            full-stack development, AI integration, and modern web technologies.
           </p>
         </motion.div>
 
@@ -118,11 +114,12 @@ const Projects = () => {
 
               {/* Action Buttons */}
               <div className="flex gap-4">
-                <AnimatedButton variant="outline" size="sm" className="flex-1">
-                  <ExternalLink className="w-4 h-4" />
-                  Live Demo
-                </AnimatedButton>
-                <AnimatedButton variant="ghost" size="sm" className="flex-1">
+                <AnimatedButton 
+                  variant="ghost" 
+                  size="sm" 
+                  className="flex-1"
+                  onClick={() => window.open(project.githubUrl, '_blank')}
+                >
                   <Github className="w-4 h-4" />
                   Code
                 </AnimatedButton>
