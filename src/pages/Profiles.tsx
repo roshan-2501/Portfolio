@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, Code, Trophy, Target, Linkedin } from "lucide-react";
-import { AnimatedButton } from "@/components/ui/animated-button";
+import { AnimatedButton } from "../components/ui/animated-button";
 
 const Profiles = () => {
   const profiles = [

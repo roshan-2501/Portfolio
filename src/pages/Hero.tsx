@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
-import { AnimatedButton } from "@/components/ui/animated-button";
-import ParticlesBackground from "@/components/layout/ParticlesBackground";
-import Scene3D from "@/components/three/Scene3D";
+import { AnimatedButton } from "../components/ui/animated-button";
+import ParticlesBackground from "../components/layout/ParticlesBackground";
+import Scene3D from "../components/three/Scene3D";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -13,26 +13,13 @@ const Hero = () => {
   };
 
   const handleDownloadCV = () => {
-    try {
-      // Create a CV download link
-      const cvUrl = '/Roshan_Resume.pdf';
-      const link = document.createElement('a');
-      link.href = cvUrl;
-      link.download = 'Roshan_Resume.pdf';
-      link.target = '_blank';
-      
-      // Add error handling
-      link.onerror = () => {
-        alert('CV file not found. Please contact me directly for my CV.');
-      };
-      
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (error) {
-      console.error('Error downloading CV:', error);
-      alert('Unable to download CV. Please contact me directly for my CV.');
-    }
+    const cvUrl = "/Roshan's_Resume.pdf"; 
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Roshan_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const containerVariants = {
