@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   const handleDownloadCV = () => {
-    const cvUrl = "/Roshan's Resume.pdf"; 
+    const cvUrl = "public/Roshan's Resume.pdf"; 
     const link = document.createElement('a');
     link.href = cvUrl;
     link.download = 'Roshan_Resume.pdf';
